@@ -1,0 +1,21 @@
+<div class="main-container view" style="text-align: center;">
+
+
+<h1><%= @article.title %></h1>
+
+    <div class="content">
+      <%= @article.content %></td>
+    </div>
+
+    <div>      
+      <%= @article.author || 'Not specified' %>
+    </div>
+    <div>  
+      <%= @article.date || 'Not specified' %>
+    </div>
+
+  <p style="margin-top: 15px;">
+    <%= link_to 'Edit',edit_article_path(@article),id:"view-edit"%>
+    <%= link_to 'Return to Articles', articles_path, id:"view-back"%>
+  </p>
+</div>
