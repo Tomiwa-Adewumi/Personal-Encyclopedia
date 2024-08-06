@@ -1,55 +1,71 @@
-# Technical Instructions
-1. Fork this repo to your local Github account.
-2. Create a new branch to complete all your work in.
-3. Test your work using the provided tests
-4. Create a Pull Request against the Shopify Main branch when you're done and all tests are passing
+# Encyclopedia Rails Application
 
-# Project Overview
-The Rails application you will be working on is an Encyclopedia, which allows users to create, view, edit, and delete articles. The application also provides search functionality to help users find relevant articles. Be sure to implement basic CRUD actions on articles. Your task is to implement these features as well as write the code that makes the tests pass.
+## Overview
 
-# Project Goals
-The main goal of this internship project is to implement the functionality required to make the existing tests pass. The provided tests cover various aspects of the application, including creating and viewing articles, editing and updating articles, deleting articles, and searching for articles. Along with completing the tests, be sure to implement all basic CRUD actions on your articles on a controller and create views to see your work in the app.
+Welcome to the Encyclopedia Rails Application! This project offers a platform for users to create, view, edit, and delete articles. It features robust search functionality to help users find relevant articles quickly. The application implements CRUD (Create, Read, Update, Delete) operations for articles and includes comprehensive testing to ensure functionality.
 
-## Your specific goals for this project are as follows:
+## Features
 
-1. Review Existing Tests: Start by reviewing the existing tests provided in the article_test.rb file located in the test/models directory. Understand the requirements and expectations of each test.
-
-2. Implement Functionality: Write the code necessary to make the existing tests pass. This involves implementing the required actions and logic in the models, controllers, and views to fulfill the specified requirements. Also be sure to implement basic CRUD actions and demonstrate proper MVC principals.
-
-3. Ensure Code Quality: Write clean, well-structured, and maintainable code. Follow best practices and adhere to the Ruby on Rails conventions. Pay attention to code readability, modularity, and performance.
-
-4. Test Your Code: After implementing the functionality, run the tests to ensure that they pass successfully. Fix any failures or errors that occur and retest until all tests pass.
-
-5. Code Documentation: Document your code by adding comments and explanatory notes where necessary. This will help other developers understand your implementation and make future maintenance easier.
-
-6. Version Control: Use Git for version control. Commit your changes regularly and push them to a branch in your forked repository.
-
-7. Create a Pull Request: Once you have completed the project goals, create a pull request to merge your changes into the main repository. Provide a clear description of the changes made and any relevant information for the code review.
+- **Create Articles:** Users can add new articles with relevant content.
+- **View Articles:** Users can access detailed information about individual articles.
+- **Edit Articles:** Users can update existing articles.
+- **Delete Articles:** Users can remove articles no longer needed.
+- **Search Functionality:** Users can search for articles using keywords.
 
 ## Getting Started
-To get started with this project, follow these steps:
 
-1. Clone the repository to your local development environment.
+To get started with the Encyclopedia Rails Application, follow these steps:
 
-2. Install the necessary dependencies by running bundle install in the project directory.
+1. **Clone the Repository:**
 
-3. Familiarize yourself with the existing codebase, including the models, controllers, and views.
+   ```bash
+   git clone <repository_url>
+   ```
 
-4. Review the existing tests in the article_test.rb file and understand their purpose and functionality.
+2. **Install Dependencies:** Navigate to the project directory and run:
 
-5. Run the tests locally to ensure they are passing.
+   ```bash
+   bundle install
+   ```
 
-6. Start working on the goals outlined above, making improvements to the existing tests and adding new tests as needed.
+3. **Run Database Migrations:** Apply any pending database migrations:
 
-7. Commit your changes regularly and push them to a branch in your forked repository.
+   ```bash
+   rails db:migrate
+   ```
 
-8. Once you have completed the project goals, create a pull request to merge your changes into the main repository.
+4. **Seed the Database:** Populate the database with initial data:
+
+   ```bash
+   rails db:seed
+   ```
+
+5. **Run the Application:** Start the Rails server:
+
+   ```bash
+   rails server
+   ```
+
+   Open your browser and navigate to `http://localhost:3000` to see the application in action.
+
+## Testing
+
+The project includes a suite of tests to validate the core functionality.
+
+1. **Review Tests:** Open `article_test.rb` in the `test/models` directory to understand the test cases.
+
+2. **Run Tests:** Execute the tests locally to ensure everything is functioning correctly:
+
+   ```bash
+   rails test
+   ```
+
+   This will execute all the test cases and provide feedback on the application's functionality.
 
 ## Resources
-Here are some resources that may be helpful during your internship project:
 
-- [Ruby on Rails Guides](https://guides.rubyonrails.org/) - Comprehensive guides on Ruby on Rails, covering various aspects of web application development.
+Here are some helpful resources for your development work:
 
-- [Ruby Style Guide](https://rubystyle.guide/) - A community-driven Ruby coding style guide to ensure consistent and readable code.
-
-- [Git Documentation](https://git-scm.com/doc) - Official documentation for Git, the version control system used in this project.
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/) - Comprehensive documentation on Ruby on Rails.
+- [Ruby Style Guide](https://rubystyle.guide/) - A style guide for consistent Ruby code.
+- [Git Documentation](https://git-scm.com/doc) - Official documentation for Git.
